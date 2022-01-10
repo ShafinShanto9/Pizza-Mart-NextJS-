@@ -1,0 +1,46 @@
+.container{
+    height: calc(100vh - 100px);
+    background-color: #d1411e;
+    
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.bannerText{
+    flex: 1;
+    padding: 20px;
+}
+.text{
+    font-size:34px;
+    color: white;
+    margin-left: 150px;
+}
+.text:first-child{
+    font-size:108px;
+    color: white;
+    margin-left: 150px;
+}
+.text:last-child{
+    font-size:10px;
+    color: white;
+    margin-left: 150px;
+}
+.imgContainer{
+    flex: 1;
+    margin-right: 150px;
+    padding: 20px;
+}
+@media screen and (max-width: 480px) {
+    .container{
+        height: 50vh;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 2fr auto;
+    }
+    .imgContainer{
+        width: 100%;
+    }
+}
